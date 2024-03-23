@@ -100,13 +100,61 @@ gsap.from(".about .about-img",{
         trigger:".about .about-img",
     }
 })
-gsap.from(".about .about-intro h3,p",{
+gsap.from(".about .about-heading,.about-intro h3,p",{
     x:900,
     stagger:0.5,
     opacity:0,
     scale:0,
     scrollTrigger:{
         scroller:"body",
-        trigger:".about .about-intro h3,p",
+        trigger:".about  .about-heading,.about-intro h3,p",
+        start:"top 6%"
+    }
+    })
+
+gsap.from(".services-heading h1",{
+    opacity:0,
+    scrollTrigger:{
+        scroller:"body",
+        trigger:".services-heading h1",
+
+    }
+})
+gsap.from(".services-boxes .box1",{
+    opacity:0,
+    scale:0,
+    scrollTrigger:{
+        scroller:"body",
+        trigger:".services-boxes .box1",
+    }
+})
+gsap.from(".services-boxes .box2",{
+   
+    scale:0,
+    scrollTrigger:{
+        scroller:"body",
+        trigger:".services-boxes .box2",
+    }
+})
+gsap.from(".services-boxes .box3",{
+    scale:0,
+    scrollTrigger:{
+        scroller:"body",
+        trigger:".services-boxes .box3",
+    }
+})
+gsap.from(".work-boxes .w-box",{
+    scale:0,
+    scrollTrigger:{
+        scroller:"body",
+        trigger:".work-boxes .w-box",
+    }
+})
+
+gsap.from("form input,textarea",{
+    scale:0,
+    scrollTrigger:{
+        scroller:"body",
+        trigger:"form input,textarea",
     }
 })
